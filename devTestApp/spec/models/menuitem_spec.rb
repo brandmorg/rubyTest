@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-Rspec.describe MenuItem, type: model do
+describe MenuItem, type: model do
     it { should belong_to(:menu) }
     it { should validate_presence_of(:name)}
     it { should validate_presence_of(:price)}
