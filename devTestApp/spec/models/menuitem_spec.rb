@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe MenuItem, :type => :model do
-    MenuItem.Create({name: "TestTaco"}, {price: "$0.99"})
     it { should has_and_belongs_to_many(:Menu) } # Confirm belong to many Menu
     it { should validate_presence_of(:name) } # Confirm name is not null
     it { should validate_presence_of(:price) } # Confirm price is not null
